@@ -1,8 +1,6 @@
-version: '3.5'
 services:
-  smscsimulator:
+  smpp-smsc-simulator:
     build: .
     ports:
       - "2775:2775"
-      - "8775"
-    command: /bin/sh -c "/app/MLSMSCSimulator"
+      - "8775:8775"
