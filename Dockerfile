@@ -6,7 +6,7 @@ RUN chown app /home/app
 WORKDIR /home/app
 ADD ./smscsimulator.cpp /home/app
 
-RUN g++ smscsimulator.cpp -O3 -o MLSMSCSimulator
+RUN g++ smscsimulator.cpp -o MLSMSCSimulator
 
 CMD ["/bin/sh","-c","/home/app/MLSMSCSimulator"]
 
