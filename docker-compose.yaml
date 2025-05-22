@@ -4,3 +4,5 @@ services:
     ports:
       - "2775:2775"
       - "8775:8775"
+
+# docker compose -p smpp-smsc-simulator up -d
